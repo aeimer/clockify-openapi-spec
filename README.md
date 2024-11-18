@@ -11,7 +11,7 @@ This is 100% best effort and not related in any kind to Clockify!
 
 ## Contribution
 
-If you want to help me keeping this API spec uptodate, I would love get some pull-requests :)
+If you want to help me keeping this API spec uptodate, I would love get some pull-requests 🤓
 
 This API spec is generated with
 https://apibldr.com[APIbldr].
