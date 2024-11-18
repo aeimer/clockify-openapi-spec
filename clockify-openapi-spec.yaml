@@ -1,0 +1,56 @@
+openapi: 3.0.3
+info:
+  title: Clockify API
+  version: '1.0'
+  description: >-
+    The in-official OpenAPI v3 spec for the https://clockify.me API.
+
+    The oriignal docs https://docs.clockify.me are not exposing an OpenAPI spec,
+    this is the try to create it with best effort.
+  x-logo:
+    url: https://clockify.me/downloads/clockify_logo_primary_black_margin.png
+servers:
+  - url: https://api.clockify.me/api/
+    description: ''
+    x-last-modified: 1731926213976
+paths:
+  /v1/workspaces:
+    get:
+      tags: []
+      externalDocs:
+        url: ''
+    post:
+      tags: []
+      externalDocs:
+        url: ''
+    x-last-modified: 1731926258897
+  /v1/workspacaes/{workspaceId}:
+    get:
+      tags: []
+      parameters:
+        - $ref: '#/components/parameters/workspaceId'
+          name: workspaceId
+          x-last-modified: 1731926847738
+      externalDocs:
+        url: ''
+    x-last-modified: 1731926432864
+components:
+  schemas:
+    workspaceId:
+      description: 'Example: 64a687e29ae1f428e7ebe303'
+      type: string
+      x-last-modified: 1731926740257
+  parameters:
+    workspaceId:
+      deprecated: false
+      name: workspaceId
+      schema:
+        $ref: '#/components/schemas/workspaceId'
+      in: path
+      required: true
+      x-last-modified: 1731926807532
+  securitySchemes: {}
+  headers: {}
+  responses: {}
+tags: []
+security: []
