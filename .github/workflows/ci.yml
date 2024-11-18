@@ -1,0 +1,17 @@
+name: Run Spectral
+
+on:
+  push:
+    branches: true
+  pull_request:
+
+jobs:
+  build:
+    name: Run Spectral
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: stoplightio/spectral-action@v0.8.11
+        with:
+          file_glob: clockify-openapi-spec.yaml
