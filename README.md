@@ -1,4 +1,4 @@
-# Inofficial Clockify OpenAPI spec
+# In-official Clockify OpenAPI spec
 
 This is a inofficial Clockify OpenAPI spec based on the
 [official docs](https://docs.clockify.me).
