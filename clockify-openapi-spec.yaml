@@ -7,6 +7,10 @@ info:
 
     The oriignal docs https://docs.clockify.me are not exposing an OpenAPI spec,
     this is the try to create it with best effort.
+  license:
+    name: MIT License
+    url: https://opensource.org/licenses/MIT
+    x-last-modified: 1731931646972
   x-logo:
     url: https://clockify.me/downloads/clockify_logo_primary_black_margin.png
 servers:
@@ -34,12 +38,128 @@ paths:
       externalDocs:
         url: ''
     x-last-modified: 1731926432864
+  /v1/workspaces/{workspaceId}/clients:
+    get:
+      tags: []
+      externalDocs:
+        url: ''
+      parameters: []
+    post:
+      tags: []
+      parameters: []
+      externalDocs:
+        url: ''
+    x-last-modified: 1731932155315
+    parameters:
+      - $ref: '#/components/parameters/workspaceId'
+        name: workspaceId
+        x-last-modified: 1731932436268
+  /v1/workspaces/{workspaceId}/clients/{id}:
+    delete:
+      tags: []
+      externalDocs:
+        url: https://docs.clockify.me/#tag/Client/operation/deleteClient
+    put:
+      tags: []
+      externalDocs:
+        url: https://docs.clockify.me/#tag/Client/operation/updateClient
+    get:
+      tags: []
+      parameters: []
+      externalDocs:
+        url: ''
+    x-last-modified: 1731932316613
+    parameters:
+      - $ref: '#/components/parameters/workspaceId'
+        name: workspaceId
+        x-last-modified: 1731932301951
+      - $ref: '#/components/parameters/clientId'
+        name: id
+        x-last-modified: 1731932421525
+  /v1/workspaces/{workspaceId}/projects:
+    get:
+      tags: []
+      externalDocs:
+        url: https://docs.clockify.me/#tag/Project/operation/getProjects
+    post:
+      tags: []
+      externalDocs:
+        url: https://docs.clockify.me/#tag/Project/operation/createNewProject
+    x-last-modified: 1731932501898
+    parameters:
+      - $ref: '#/components/parameters/workspaceId'
+        name: workspaceId
+        x-last-modified: 1731932518800
+  /v1/workspaces/{workspaceId}/projects/{projectId}:
+    get:
+      tags: []
+      externalDocs:
+        url: ''
+    put:
+      tags: []
+      externalDocs:
+        url: ''
+    delete:
+      tags: []
+      externalDocs:
+        url: ''
+    x-last-modified: 1731932605084
+    parameters:
+      - $ref: '#/components/parameters/workspaceId'
+        name: workspaceId
+        x-last-modified: 1731932683493
+      - $ref: '#/components/parameters/projectId'
+        name: projectId
+        x-last-modified: 1731932695418
+  /v1/workspaces/{workspaceId}/time-entries:
+    post:
+      tags: []
+      externalDocs:
+        url: ''
+    x-last-modified: 1731932811614
+    parameters:
+      - $ref: '#/components/parameters/workspaceId'
+        name: workspaceId
+        x-last-modified: 1731932828176
+  /v1/workspaces/{workspaceId}/time-entries/{id}:
+    get:
+      tags: []
+      externalDocs:
+        url: ''
+    delete:
+      tags: []
+      externalDocs:
+        url: ''
+    put:
+      tags: []
+      externalDocs:
+        url: ''
+    x-last-modified: 1731932874901
+    parameters:
+      - $ref: '#/components/parameters/workspaceId'
+        name: workspaceId
+        x-last-modified: 1731932889857
+      - $ref: '#/components/parameters/timeEntryId'
+        name: id
+        x-last-modified: 1731932968478
 components:
   schemas:
     workspaceId:
       description: 'Example: 64a687e29ae1f428e7ebe303'
       type: string
       x-last-modified: 1731926740257
+    clientId:
+      type: string
+      description: 'Example: 44a687e29ae1f428e7ebe305'
+      x-last-modified: 1731932370819
+    projectId:
+      type: string
+      description: 'Example: 5b641568b07987035750505e'
+      x-last-modified: 1731932638476
+    timeEntryId:
+      type: string
+      description: 'Example: 64c777ddd3fcab07cfbb210c'
+      x-last-modified: 1731932932868
   parameters:
     workspaceId:
       deprecated: false
@@ -49,8 +169,33 @@ components:
       in: path
       required: true
       x-last-modified: 1731926807532
+    clientId:
+      name: clientId
+      in: path
+      required: true
+      deprecated: false
+      schema:
+        $ref: '#/components/schemas/clientId'
+      x-last-modified: 1731932405233
+    projectId:
+      name: projectId
+      in: path
+      required: true
+      deprecated: false
+      schema:
+        $ref: '#/components/schemas/projectId'
+      x-last-modified: 1731932665270
+    timeEntryId:
+      in: path
+      required: true
+      deprecated: false
+      schema:
+        $ref: '#/components/schemas/timeEntryId'
+      x-last-modified: 1731932953084
   securitySchemes: {}
   headers: {}
   responses: {}
+externalDocs:
+  url: https://docs.clockify.me
 tags: []
 security: []
