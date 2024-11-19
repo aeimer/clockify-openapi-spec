@@ -3,7 +3,8 @@
 This is a inofficial Clockify OpenAPI spec based on the
 [official docs](https://docs.clockify.me).
 
-Sadly Clockify does not publishes a OpenAPI spec and the API docs seem to be incomplete.
+The main goal of this repo is to have a better spec than the API docs.
+Sadly Clockify does not publishes a OpenAPI spec (or do they?) and the API docs seem to be incomplete.
 Therefore, this OpenAPI spec should help you to e.g. generate SDKs in the language you need.
 
 See
@@ -13,6 +14,18 @@ DISCLAIMER:
 This is 100% best effort and not related in any kind to Clockify!
 
 Last updated: 2024-11-18
+
+## Official Clockify OpenAPI spec
+
+There is also an OpenAPI spec available under
+https://api.clockify.me/api/v3/api-docs
+
+A copy can be found in the file [`official-clockify-openapi-spec.yaml`](official-clockify-openapi-spec.yaml).
+The copy was created at 2024-11-19 with
+`http GET https://api.clockify.me/api/v3/api-docs | yq -P -`.
+
+DISCLAIMER:
+This is an undocumented endpoint, use with caution!
 
 ## Contribution
 
