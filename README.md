@@ -36,3 +36,7 @@ If you want to help me keeping this API spec uptodate, I would love get some pul
 
 This API spec is generated with
 [APIbldr](https://apibldr.com).
+
+## Star history
+
+[![Star History](https://api.star-history.com/svg?repos=aeimer/clockify-openapi-spec&type=Date)](https://star-history.com/#aeimer/clockify-openapi-spec&Date)
