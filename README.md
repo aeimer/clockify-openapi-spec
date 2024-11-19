@@ -20,6 +20,9 @@ Last updated: 2024-11-18
 There is also an OpenAPI spec available under
 https://api.clockify.me/api/v3/api-docs
 
+See
+[Swagger UI](https://petstore.swagger.io/?url=https://api.clockify.me/api/v3/api-docs).
+
 A copy can be found in the file [`official-clockify-openapi-spec.yaml`](official-clockify-openapi-spec.yaml).
 The copy was created at 2024-11-19 with
 `http GET https://api.clockify.me/api/v3/api-docs | yq -P -`.
