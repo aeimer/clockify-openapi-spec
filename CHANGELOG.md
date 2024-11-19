@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/aeimer/clockify-openapi-spec/compare/v0.1.0...v0.2.0) (2024-11-19)
+
+
+### Features
+
+* adds Clockify public OpenAPI spec ([b805845](https://github.com/aeimer/clockify-openapi-spec/commit/b80584598936b074b73876f14357feff61c7dfc8))
+
 ## 0.1.0 (2024-11-18)
 
 
