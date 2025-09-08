@@ -2,7 +2,7 @@ name: Run Spectral
 
 on:
   push:
-    branches: true
+    branches: '*'
   pull_request:
 
 jobs:
