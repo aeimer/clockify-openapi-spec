@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/aeimer/clockify-openapi-spec/compare/v0.2.0...v0.2.1) (2025-10-05)
+
+
+### Bug Fixes
+
+* **deps:** bump actions/checkout from 4 to 5 ([d407d6a](https://github.com/aeimer/clockify-openapi-spec/commit/d407d6a24306409e275285e74dbc18a27d64c17a))
+* **deps:** bump stoplightio/spectral-action from 0.8.11 to 0.8.13 ([a20eab5](https://github.com/aeimer/clockify-openapi-spec/commit/a20eab5214515b93c4a367fc532bebe8fe8f3d92))
+
 ## [0.2.0](https://github.com/aeimer/clockify-openapi-spec/compare/v0.1.0...v0.2.0) (2024-11-19)
 
 
