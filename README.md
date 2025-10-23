@@ -24,8 +24,8 @@ See
 [Swagger UI](https://petstore.swagger.io/?url=https://api.clockify.me/api/v3/api-docs).
 
 A copy can be found in the file [`official-clockify-openapi-spec.yaml`](official-clockify-openapi-spec.yaml).
-The copy was created at 2024-11-19 with
-`http GET https://api.clockify.me/api/v3/api-docs | yq -P -`.
+The copy was created at 2025-10-23 with
+`http GET https://api.clockify.me/api/v3/api-docs | yq -P - > official-clockify-openapi-spec.yaml`
 
 DISCLAIMER:
 This is an undocumented endpoint, use with caution!
